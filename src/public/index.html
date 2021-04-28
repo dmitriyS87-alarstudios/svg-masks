@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG mask test</title>
 </head>
+
 <body>
-    <div>Hellow world</div>
+    <div class="visually-hidden">
+        <svg width="0" height="0" viewBox="0 0 400 300">
+            <clipPath id="mask">
+                <rect fill="#000000" x="0" y="0" width="400" height="300"></rect>
+              </clipPath>
+            <clipPath id="mask1">
+                <circle fill="#FFFFFF" cx="50" cy="50" r="150" />
+              </clipPath>
+            <clipPath id="mask2">
+                <circle fill="#FFFFFF" cx="150" cy="150" r="100" />
+              </clipPath>
+        </svg>
+    </div>
+    <h1 class="page-title">SVG masks test:</h1>
+    <section class="example">
+        <button class="masked-button">just button for svg mask</button>
+        <button class="masked-button masked-button--mask1">just button for svg mask</button>
+        <button class="masked-button masked-button--mask2">just button for svg mask</button>
+    </section>
+    <section class="example">
+        <div class="masked-div">just button for svg mask</div>
+        <div class="masked-div masked-button--mask1">just button for svg mask</div>
+        <div class="masked-div masked-button--mask2">just button for svg mask</div>
+    </section>
+
 </body>
+
 </html>
