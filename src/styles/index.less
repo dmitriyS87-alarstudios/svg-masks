@@ -1,0 +1,57 @@
+* {
+  outline: 1px solid blue;
+  outline-offset: -1px;
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  font-size: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.example {
+  display: flex;
+  min-height: 30vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.masked-button {
+  margin: 15px;
+  height: 20vh;
+  width: 20vh;
+  background-color: red;
+  clip-path: url(#mask);
+  border: 1px solid black;
+  box-shadow: 10px 10px 0 0;
+}
+
+.masked-button:hover {
+  background-color: yellow;
+  transition: all 0.3s ease-in;
+}
+
+.masked-div {
+  margin: 15px;
+  height: 20vh;
+  width: 20vh;
+  background-color: red;
+  clip-path: url(#mask);
+}
+
+.masked-button--mask1 {
+  clip-path: url(#mask1);
+}
+
+.masked-button--mask2 {
+  clip-path: url(#mask2);
+}
