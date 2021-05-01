@@ -1,10 +1,29 @@
-# Setup
+# Setup  
+
+```shell
+npm i
+```
+
+## Build
+
+```shell
+npm run dev
+```
+
+## Start
+
+```shell
+npm run build
+```
+
+# Alternative jinja2 transpiler
+## Setup
 
 ```shell
 sudo dnf install python3-jinja2-cli
 ```
 
-# Build
+## Build
 
 simple with a few params:
 ```shell
