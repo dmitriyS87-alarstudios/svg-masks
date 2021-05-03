@@ -1,1 +1,4 @@
-{ "ENV_STATIC_ASSETS_URL": "/static" }
+{ 
+  "ENV_STATIC_ASSETS_URL": "/static",
+  "TEST_PROPERTY": "test value"
+}

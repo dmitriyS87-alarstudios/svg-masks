@@ -1,22 +1,4 @@
-# Setup  
-
-```shell
-npm i
-```
-
-## Build
-
-```shell
-npm run dev
-```
-
-## Start
-
-```shell
-npm run build
-```
-
-# Alternative jinja2 transpiler
+# Commandline jinja2 transpiler
 ## Setup
 
 ```shell
@@ -36,3 +18,29 @@ echo '{ "ENV_STATIC_ASSETS_URL": "/static" }' > config.json
 jinja2 index.tmpl config.json -o index.html
 ```
 
+# Commandline less transpiler
+## Setup  
+
+```shell
+npm install less -g
+```
+
+## Build
+
+```shell
+lessc styles.less styles.css
+```
+
+# Gulp watcher and browser using commandline transpilers above
+
+## Setup  
+
+```shell
+npm i
+```
+
+## Build
+
+```shell
+gulp build
+```

@@ -1,38 +1,16 @@
 {
-  "name": "svg-masks",
+  "name": "ensemble-front-with-jinja",
   "version": "1.0.0",
-  "description": "just for testing svg masks for different html elements",
-  "main": "index.js",
-  "repository": "git@github.com:dmitriyS87-alarstudios/svg-masks.git",
-  "author": "Dmitriy Schukin <schukindmitriy@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.13.16",
-    "@babel/preset-env": "^7.13.15",
-    "babel": "^6.23.0",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.2.4",
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "html-webpack-plugin": "^5.3.1",
-    "less": "^4.1.1",
-    "less-loader": "^8.1.1",
-    "mini-css-extract-plugin": "^1.5.1",
-    "postcss-loader": "^5.2.0",
-    "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.2.1",
-    "style-loader": "^2.0.0",
-    "stylelint": "^13.13.0",
-    "stylelint-config-standard": "^22.0.0",
-    "stylelint-order": "^4.1.0",
-    "webpack": "^5.36.1",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
-  },
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "browser-sync": "^2.26.14"
   }
 }
