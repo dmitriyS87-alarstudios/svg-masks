@@ -1,0 +1,38 @@
+.landings-index {
+  
+  .landings-list {
+    list-style-type: none;
+    line-height: 1.5;
+  }
+
+  .shell {
+    white-space: pre-wrap;
+    background-color: hsl(212, 28%, 18%);
+    color: hsl(236, 33%, 90%);
+    border: 1px solid hsla(0,0%,0%,.5);    
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+}
+
+@import "common/theme.less";
+
+.landing {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+
+  .tape {
+    max-width: 1920px;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    background-color: @SeabedBlue;
+
+    @import "common/components.less";
+    @import "Landing_Patients/styles.less";
+  }
+}
