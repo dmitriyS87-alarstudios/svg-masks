@@ -1,6 +1,17 @@
 .landing-header {
   background: none;
   color: @CloudWhite;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__logo {
+    padding: 20px 40px;
+  }
+  &__navmenu {
+    padding: 20px 40px;
+  }  
+  @import "header.less";
 }
 
 .landing-footer {
@@ -13,3 +24,4 @@
   width: 100%;
   overflow-x: hidden;
 }
+
