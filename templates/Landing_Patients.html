@@ -8,9 +8,14 @@
   <!-- <p> Developing using Jinja templates with config.json properties {{ TEST_PROPERTY }} {{ENV_STATIC_ASSETS_URL}} </p> -->
   {% include "Landing_Patients/module-1.html" %}
   {% include "Landing_Patients/module-2.html" %}
-  {% include "Landing_Patients/module-3.html" %}
-  {% include "Landing_Patients/module-4.html" %}
-  {% include "Landing_Patients/module-5.html" %}
-  {% include "Landing_Patients/module-6.html" %}
+  <div class='group-1'>
+    {% include "Landing_Patients/module-3.html" %}
+    {% include "Landing_Patients/module-4.html" %}
+    <div class='group-2'>
+      {% include "Landing_Patients/module-5.html" %}
+      {% include "Landing_Patients/module-6.html" %}
+    </div>
+  </div>
   {% include "Landing_Patients/module-7.html" %}
+  {% include "Landing_Patients/svg-mask.html" %}
 {% endblock %}
