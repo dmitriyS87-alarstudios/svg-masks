@@ -1,24 +1,26 @@
-.group-1 {
+.group-Seafoam, .group-BlushOrange {
+  overflow-x: hidden;
+  color: @SeabedBlue;
+}
+
+.group-Seafoam {
   background-color: @Seafoam;
-  color: @SeabedBlue;
-  overflow: hidden;
-  .group-2 {
-    padding-top: 315px;
-    background: url(../static/svg/shape_1.svg) no-repeat;
-    background-size: cover;
-  }
 }
-.group-3 {
+
+.group-BlushOrange {
   background-color: @BlushOrange;
-  color: @SeabedBlue;
-  overflow: hidden;
 }
+
+//.group-Pebble {
+//  padding-top: 315px;
+//  background: url(../static/svg/shape_1.svg) no-repeat;
+//  background-size: cover;
+//}
 
 .module-1 {
   background: none;
   color: @CloudWhite;
 }
-
 
 .module-1 {
   &__text-block {
@@ -43,19 +45,19 @@
 .module-3 {
   position: relative;
   margin-bottom: 115px;
-  text-align: left;
+  height: 1017px;
   &__title {
-    position: absolute;
-    right: 849px;
-    top: 497px;
+    text-align: left;
+    padding: 497px 0 0 209px;
     width: 862px;
   }
   &__container {
+    position: absolute;
     width: 1045px;
     height: 1017px;
-    margin-left: auto;
     clip-path: url(#mask-03);
-    transform: translateX(92px);
+    right: -92px;
+    top: 0;
   }
   &__button {
     background-color: #3B9BD8;
@@ -66,20 +68,25 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
-    &:hover {
-      background-color: grey;
-    }
+    cursor: pointer;
   }
 }
 
 .module-4 {
   position: relative;
   text-align: left;
-  &__texture {
+  z-index: 1;
+  &::before {
+    content: "";
     width: 440px;
     height: 789px;
     position: absolute;
     left: 0;
+    background: url(static/svg/texture_1.svg) no-repeat;
+    z-index: -1;
+  }
+  &__texture {
+    
   }
   &__smartphone {
     width: 368px;
@@ -183,26 +190,33 @@
 }
 
 .module-7 {
-  padding: 338px 0 66px 204px;
+  padding: 338px 0 66px 198px;
   text-align: left;
   position: relative;
-  overflow-x: hidden;
-  &__shape-container {
+  overflow: hidden;
+  z-index: 1;
+  &::before {
     position: absolute;
-    right: 0;
-    top: -276px;
+    right: 142px;
+    top: -353px;
+    width: 1075px;
+    height: 1769px;
+    display: block;
+    content: "";
+    background: url(../static/svg/bg_shape_module7.svg) no-repeat;
+    z-index: -1;
   }
   &__container {
     width: 824px;
   }
   &__title {
     width: 622px;
-    padding-bottom: 40px  ;
+    margin-bottom: 40px;
   }
   &__content {
     font-size: 35px;
     line-height: 45px;
-    padding-bottom: 135px;
+    margin-bottom: 135px;
   }
   &__carousel {
     &-control {
@@ -218,12 +232,159 @@
       margin-right: 11px;
       border-radius: 50%;
       cursor: pointer;
+      &_active {
+        background-color: @SeabedBlue;
+      }
     }
     &-slide {
       font-size: 25px;
       line-height: 35px;
       opacity: 0.65;
       width: 621px;
+    }
+  }
+}
+
+.module-8 {
+  text-align: center;
+  padding: 464px 0 860px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    left: 0;
+    top:  -200px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    background: url(../static/svg/bg_shape_3.svg) no-repeat;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    right: 0;
+    top:  425px;
+    width: 500px;
+    height: 963px;
+    display: block;
+    content: "";
+    background: url(../static/svg/bg_shape_4.svg) no-repeat;
+    z-index: -1;
+  }
+
+  &__container {
+    width: 1260px;
+    margin: 0 auto;
+  }
+  &__title {
+   margin-bottom: 40px;
+  }
+  &__content {
+    width: 100%;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 97px;
+    p {
+      font-family: GT Walsheim;
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+  &__button {
+    background-color: @Pacific;
+    color: @CloudWhite;
+    font-size: 20px;
+    line-height: 75px;
+    clip-path: url(#mask-05);
+    width: 344px;
+    height: 114px;
+    cursor: pointer;
+  }
+}
+
+.module-9 {
+  margin-top: -231px;
+  &__container {
+    width: 1427px;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: left;
+    width: 582px;
+    margin-bottom: 80px;
+  }
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  &__item {
+    box-sizing: border-box;
+    width: 447px;
+    height: 400px;
+    padding: 69px 25px 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    &_left {
+      background-color: @Pebble;
+      color: @SeabedBlue;
+      &::before {
+        position: absolute;
+        left: -147px;
+        bottom: -200px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(../static/svg/bg_shape_6.svg) no-repeat;
+      }
+    }
+    &_middle {
+      background-color: @SeabedBlue;
+      color: @CloudWhite;
+      &::before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 117px;
+        height: 105px;
+        background: url(../static/svg/bg_shape_5.svg) no-repeat;
+      }
+    }
+    &_right {
+      background-color: @Pebble;
+      color: @SeabedBlue;
+      z-index: 1;
+      &::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        width: 142px;
+        height: 156px;
+        background: url(../static/svg/bg_shape_7.svg) no-repeat;
+        z-index: -1;
+      }
+    }
+    &-content {
+      font-family: GT Walsheim;
+      font-size: 25px;
+      line-height: 35px;
+    }
+    &-hashtag {
+      font-family: GT Walsheim;
+      font-size: 25px;
+      line-height: 35px;
+    }
+    &-img {
+      
     }
   }
 }
