@@ -44,3 +44,9 @@ npm i
 ```shell
 gulp build
 ```
+
+# TODO (May 5 2021)
+
+1. Project stylesheets and classnames convention
+2. Project folders and files structure
+3. Landings Wireframe - common approach to markup wavy transitions between landing page GROUPS

@@ -1,9 +1,11 @@
 /* JUST DEV INDEX PAGE */
 .landings-index {
-  
+  margin: 20px 40px;
+  line-height: 1.5;
+
   .landings-list {
     list-style-type: none;
-    line-height: 1.5;
+    margin: 20px 0;
   }
 
   .shell {
@@ -35,7 +37,14 @@ h1 {
   font-weight: 300;
   font-size: 120px;
   line-height: 110px;
-  margin: 0;
+}
+
+h2 {
+  font-family: 'Neue World';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 115px;
 }
 
 h3 {
@@ -44,6 +53,14 @@ h3 {
   font-weight: 300;
   font-size: 80px;
   line-height: 90px;  
+}
+
+h4 {
+  font-family: 'Neue World';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 75px;
 }
 
 .landing {
@@ -59,5 +76,9 @@ h3 {
 
     @import "common/components.less";
     @import "Landing_Patients/styles.less";
+    @import "Landing_Physicians/styles.less";
+    @import "Landing_Science/styles.less";
+    @import "Landing_FAQs/styles.less";
+    @import "Landing_Anna/styles.less";
   }
 }

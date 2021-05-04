@@ -1,0 +1,30 @@
+{% extends "common/base.html" %}
+
+{% block title %}
+  Landing_Physicians
+{% endblock %}
+
+{% block content %}
+  <div class="group-BlushOrange group-BlushOrange_top">
+    {% include "common/header.html" %}
+    {% include "Landing_Physicians/module-1.html" %}
+    {% include "Landing_Physicians/module-2.html" %}
+  </div>
+  <div class="group-Seafoam">
+    {% include "Landing_Physicians/module-3.html" %}
+    {% include "Landing_Physicians/module-4.html" %}
+  </div>
+  <div class="group-Pebble">
+    {% include "Landing_Physicians/module-5.html" %}
+    {% include "Landing_Physicians/module-6.html" %}
+  </div>
+  <div class="group-SeabedBlue">
+    {% include "Landing_Physicians/module-7.html" %}
+  </div>
+  <div class="group-BlushOrange group-BlushOrange_bottom">
+    {% include "Landing_Physicians/module-8.html" %}
+    {% include "Landing_Physicians/module-9.html" %}
+    {% include "Landing_Physicians/module-10.html" %}
+    {% include "common/footer.html" %}
+  </div>
+{% endblock %}
