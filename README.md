@@ -50,3 +50,11 @@ gulp build
 1. Project stylesheets and classnames convention
 2. Project folders and files structure
 3. Landings Wireframe - common approach to markup wavy transitions between landing page GROUPS
+4. SVG masks collection
+5. Macroses https://jinja.palletsprojects.com/en/2.11.x/templates/#import to make smth like
+```jinja2
+{% import "shapes.html" as shapes %}
+<li class="navmenu__item">
+  {{ shapes.button(class="round-button", text="Get your prescription") }}
+</li>
+```
