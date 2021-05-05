@@ -3,7 +3,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M2328.9 1.85465C2328.9 1.85465 1931.93 532.936 1066.24 467.935C200.559 402.937 -558.262 357.078 -17.9782 1040.84C522.302 1724.6 1090.2 2448.19 2097.34 1654.23C3104.48 860.266 2328.9 1.85465 2328.9 1.85465Z" fill="#E8E6DF"/>
   </mask>
   <g mask="url(#mask0)">
-    <rect x="-114" y="262" width="2085" height="1779" fill="#E8E6DF"/>
+    <rect x="-114" y="262" width="2815" height="1779" fill="#E8E6DF"/>
     <rect x="-164" y="218" width="660" height="692" fill="url(#pattern0)"/>
   </g>
   <defs>
