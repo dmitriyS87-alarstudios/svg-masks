@@ -72,13 +72,28 @@ h4 {
     min-height: 100vh;
     margin: 0 auto;
 
-    background-color: @SeabedBlue;
+    background-color: @SeabedBlue; /* TODO delete this rule abd wrap modules templates/Landing_Patients.html to the div.group-SeabedBlue group */
 
     @import "common/components.less";
-    @import "Landing_Patients/styles.less";
-    @import "Landing_Physicians/styles.less";
-    @import "Landing_Science/styles.less";
-    @import "Landing_FAQs/styles.less";
-    @import "Landing_Anna/styles.less";
   }
+}
+
+.Landing_Patients {
+  @import "Landing_Patients/styles.less";
+}
+
+.Landing_Physicians {
+  @import "Landing_Physicians/styles.less";
+}
+
+.Landing_Science {
+  @import "Landing_Science/styles.less";
+}
+
+.Landing_FAQs {
+  @import "Landing_FAQs/styles.less";
+}
+
+.Landing_Anna {
+  @import "Landing_Anna/styles.less";
 }
