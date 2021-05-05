@@ -5,13 +5,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
-    
+    {% if LINK_HAPPIFY_STYLES %}
     <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://static.happify.com/static/css/vendor/smart-app-banner.css?3254c4343bdf00d89cf8dbc9a139735686f9f2eb" type="text/css" media="screen">
     <link rel="stylesheet" href="https://static.happify.com/static/cache/app.css">
     <link rel="stylesheet" href="https://static.happify.com/static/cache/public_home.css">
     <link rel="stylesheet" href="https://static.happify.com/static/cache/fueled_app.css">
-      
+    {% endif %}
     <link rel="stylesheet" href="app.css">
   </head>
   <body class="{% block bodyClasses %}{% endblock %}">
