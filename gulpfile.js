@@ -27,17 +27,25 @@ function less() {
   });
 }
 
-function templates() {
+function templates(done) {
   return src('templates/*.html')
     .pipe(jinja())
-    .pipe(dest('dist'));
+    .pipe(dest('dist'))
+    .on('end', done);
 }
 
-function styles() {
+function styles(done) {
   return src('templates/*.less')
     .pipe(less())
-    .pipe(dest('dist'));
+    .pipe(dest('dist'))
+    .on('end', done);
 }
+
+function reload(done) {
+  browserSync.reload();
+  done();
+}
+
 
 function serve() {
   browserSync.init({ 
@@ -48,8 +56,8 @@ function serve() {
       dir: './static'
     }]    
   });
-  watch('templates/**/*.html', templates).on('change', browserSync.reload);
-  watch('templates/**/*.less', styles).on('change', browserSync.reload);
+  watch(['templates/**/*.html', 'config.json'], series(templates, reload));
+  watch('templates/**/*.less', series(styles, reload));
 }
 
 exports.templates = templates;

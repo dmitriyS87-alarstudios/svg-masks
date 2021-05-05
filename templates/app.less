@@ -70,14 +70,14 @@ h4 {
   @import "common/clean-happify.less";
 
   .tape {
-    max-width: 1920px;
+    max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
 
     background-color: @SeabedBlue; /* TODO delete this rule abd wrap modules templates/Landing_Patients.html to the div.group-SeabedBlue group */
 
-    @import "common/components.less";
-    
+    @import "common/groups/index.less";
+    @import "common/modules/index.less";
   }
 
   .visually-hidden {

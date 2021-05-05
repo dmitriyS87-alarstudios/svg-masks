@@ -7,7 +7,7 @@
 {% block bodyClasses %}landing Landing_Patients{% endblock %}
 
 {% block content %}
-  <!-- <p> Developing using Jinja templates with config.json properties {{ TEST_PROPERTY }} {{ENV_STATIC_ASSETS_URL}} </p> -->
+  {% include "common/modules/module-header.html" %}
   {% include "Landing_Patients/module-1.html" %}
   {% include "Landing_Patients/module-2.html" %}
   <div class="group-Seafoam">
@@ -22,5 +22,5 @@
     {% include "Landing_Patients/module-9.html" %}
     {% include "Landing_Patients/module-10.html" %}
   </div>
-</div>
+  {% include "common/modules/module-footer.html" %}
 {% endblock %}
