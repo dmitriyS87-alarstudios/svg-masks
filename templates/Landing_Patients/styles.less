@@ -1,6 +1,8 @@
 .group-Seafoam, .group-BlushOrange {
   overflow-x: hidden;
-  color: @SeabedBlue;
+  &> * {
+    color: @SeabedBlue;  
+  }
 }
 
 .group-Seafoam {
@@ -45,7 +47,6 @@
   position: relative;
   margin-bottom: 115px;
   height: 1017px;
-
   &__title {
     text-align: left;
     padding: 497px 0 0 209px;
@@ -342,7 +343,7 @@
 
 .module-9 {
   margin-top: -231px;
-
+  
   &__container {
     width: 1427px;
     margin: 0 auto;
