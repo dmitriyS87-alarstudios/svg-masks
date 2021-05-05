@@ -1,0 +1,24 @@
+{% extends "common/base.html" %}
+
+{% block title %}
+Landing_FAQs
+{% endblock %}
+
+{% block bodyClasses %}landing Landing_FAQs{% endblock %}
+
+{% block content %}
+  <div class="group-Sandstone">
+    {% include "common/header.html" %}
+    {% include "Landing_FAQs/module-1.html" %}
+  </div>
+  <div class="group-Pebble">
+    {% include "Landing_FAQs/module-2.html" %}
+  </div>
+  <div class="group-BlushOrange">
+    {% include "Landing_FAQs/module-3.html" %}
+  </div>
+  <div class="group-Seafoam">
+    {% include "Landing_FAQs/module-4.html" %}
+    {% include "common/footer.html" %}
+  </div>
+{% endblock %}
