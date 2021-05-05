@@ -47,6 +47,7 @@ gulp build
 
 # TODO (May 5 2021)
 
+0. Link happify styles and scripts and, reset them all
 1. Project stylesheets and classnames convention
 2. Project folders and files structure
 3. Landings Wireframe - common approach to markup wavy transitions between landing page GROUPS
