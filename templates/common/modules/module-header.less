@@ -1,11 +1,11 @@
 .module-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
   &__logo {
     padding: 2rem;
   }
+
   &__navmenu {
     padding: 2.4rem;
   }
@@ -14,6 +14,28 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    &__ensemble {
+      font-family: 'Neue World', sans-serif;
+      font-weight: 500;
+      font-size: 3.8rem;
+      line-height: 4.5rem;
+
+      /* identical to box height */
+
+      letter-spacing: -0.015em;
+    }
+
+    &__poweredby {
+      font-family: 'GT Walsheim Pro Trial', sans-serif;
+      font-weight: normal;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+
+      /* identical to box height */
+
+      letter-spacing: -0.015em;
+    }
   }
 
   .navmenu {
@@ -44,9 +66,23 @@
 
     .toggle-menu-button {
       background: none;
-      cursor: pointer;  
+      cursor: pointer;
+
+      //clip-path: path("M213.099 12.0229C280.452 39.3178 223.176 69.6906 178.599 78.4429C122.814 89.3976 35.2682 79.6475 11.6292 59.9163C-3.49024 47.2952 -4.74794 25.3665 22.6432 14.7933C65.4754 -2.72262 163.786 -5.94613 213.099 12.0229Z");
+      clip-path: url(#mask-05);
+
+      /*
+      TODO: Macroses https://jinja.palletsprojects.com/en/2.11.x/templates/#import to make smth like
+      ```jinja2
+      {% import "shapes.html" as shapes %}
+      <li class="navmenu__item">
+        {{ shapes.button(class="round-button", text="Get your prescription") }}
+      </li>
+      ```
+      */
     }
 
+    .toggle-button {
+    }
   }
-
 }

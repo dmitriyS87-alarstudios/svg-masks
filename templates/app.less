@@ -21,6 +21,7 @@
 }
 
 /* COMMON LANDING STYLES */
+
 /* TODO turn to separate file */
 
 @import "common/theme.less";
@@ -28,13 +29,13 @@
 .ensemble-landing {
   width: 100%;
   text-align: center;
+
   @import "common/clean-happify.less";
 
   .tape {
-    max-width: 1440px;
-    min-height: 100vh;
     margin: 0 auto;
-
+    min-height: 100vh;
+    max-width: 1440px;
     background-color: @SeabedBlue; /* TODO delete this rule abd wrap modules templates/Landing_Patients.html to the div.group-SeabedBlue group */
 
     @import "common/groups/index.less";
@@ -42,13 +43,13 @@
   }
 
   .visually-hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    height: 1px;
     overflow: hidden;
-    position: absolute;
     white-space: nowrap;
-    width: 1px;
   }
 }
 
