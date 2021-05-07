@@ -4,20 +4,21 @@
 Landing_FAQs
 {% endblock %}
 
-{% block bodyClasses %}landing Landing_FAQs{% endblock %}
+{% block bodyClasses %}ensemble-landing Landing_FAQs{% endblock %}
 
 {% block content %}
-  <div class="group-Sandstone">
+  <div class="ensemble-landing-group group-Sandstone">
+    <img class="background-image" src="{{ ENV_STATIC_ASSETS_URL }}/lesse-fw19-finals-50_copy_2_900x 2.png">
     {% include "common/modules/module-header.html" %}
     {% include "Landing_FAQs/module-1.html" %}
   </div>
-  <div class="group-Pebble">
+  <div class="ensemble-landing-group group-Pebble">
     {% include "Landing_FAQs/module-2.html" %}
   </div>
-  <div class="group-BlushOrange">
+  <div class="ensemble-landing-group group-BlushOrange">
     {% include "Landing_FAQs/module-3.html" %}
   </div>
-  <div class="group-Seafoam">
+  <div class="ensemble-landing-group group-Seafoam">
     {% include "common/modules/module-stay-informed.html" %}
     {% include "common/modules/module-footer.html" %}
   </div>

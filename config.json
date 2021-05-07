@@ -1,4 +1,4 @@
 { 
   "ENV_STATIC_ASSETS_URL": "/static",
-  "LINK_HAPPIFY_STYLES": true
+  "LINK_HAPPIFY_STYLES": false
 }

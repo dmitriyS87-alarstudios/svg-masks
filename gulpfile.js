@@ -46,7 +46,6 @@ function reload(done) {
   done();
 }
 
-
 function serve() {
   browserSync.init({ 
     server: "./dist",
