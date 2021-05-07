@@ -1,7 +1,49 @@
 .module-footer {
-  /* defined in groups!
-  background: none;
-  color: @CloudWhite;
-  */
-  min-height: 15rem; /* debug */
+  color: @CloudWhite; 
+  .logo svg {
+    fill: @CloudWhite;
+  }
+
+  font-family: "GT Walsheim";
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+
+  .links {
+    font-size: 1.6rem;
+  }  
 }
+
+.module-footer {
+  padding: 18rem 12rem 12rem 12rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .divider {
+    width: 100%;
+    height: auto;
+  }
+
+  .terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+}
+
