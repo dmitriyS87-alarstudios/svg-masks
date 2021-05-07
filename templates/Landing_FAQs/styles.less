@@ -1,12 +1,51 @@
+.tape {
+  background-color: @Seafoam;
+  color: @SeabedBlue;
+}
+
+.module-header {
+  .logo svg {
+    fill: @SeabedBlue;
+  }
+  .navmenu {
+    .link {
+      color: @CloudWhite; 
+    }
+    .toggle-menu-button svg {
+      fill: @CloudWhite; 
+    }
+  }
+}
+
 .group-1 {
   .background-image {
     position: absolute;
     left: 0;
     top: 0;
   }
-  min-height: 70rem;
 }
 
 .group-2 {
+  top: -4rem;
+  margin-bottom: -12rem;
   clip-path: url("#Landing_FAQs-2");
+}
+
+.group-3 {
+  clip-path: url("#Landing_FAQs-3");
+  
+}
+
+.module-1 {
+  color: @CloudWhite; 
+  padding: 23rem;
+}
+
+.module-2 {
+  color: @SeabedBlue;
+  min-height: 250rem;
+}
+
+.module-footer {
+
 }
