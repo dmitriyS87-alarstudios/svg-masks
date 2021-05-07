@@ -8,11 +8,11 @@
   flex-direction: row;
   justify-content: space-between;
   &__logo {
-    padding: 20px 40px;
+    padding: 2rem 4rem;
   }
   &__navmenu {
-    padding: 20px 40px;
-  }  
+    padding: 2rem 4rem;
+  }
 
   .logo {
     display: flex;
@@ -20,10 +20,11 @@
     align-items: flex-end;
 
     &__ensemble {
-      font-family: 'Neue World';
+      font-family: 'Neue World', sans-serif;
       font-weight: 500;
-      font-size: 38.6068px;
-      line-height: 45px;
+      font-size: 3.8rem;
+      line-height: 4.5rem;
+
       /* identical to box height */
       
       letter-spacing: -0.015em;     
@@ -32,8 +33,9 @@
     &__poweredby {
       font-family: 'GT Walsheim Pro Trial';
       font-weight: normal;
-      font-size: 11.9814px;
-      line-height: 14px;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+
       /* identical to box height */
       
       letter-spacing: -0.015em;    
@@ -43,15 +45,15 @@
   .navmenu {
     list-style: none;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    font-family: 'GT Walsheim', sans-serif;
+    font-size: 2rem;
+    line-height: 7.5rem;
 
-    font-family: 'GT Walsheim';
-    font-size: 20px;
-    line-height: 75px;
-    /* identical to box height, or 375% */  
+    /* identical to box height, or 375% */
 
     &__item {
-      padding: 0 14px;
+      padding: 0 1.4rem;
     }
 
     .link {
@@ -59,8 +61,11 @@
     }
 
     .round-button {
-      font-family: 'GT Walsheim';
-      font-size: 20px;
+      padding: 2rem;
+      font-family: 'GT Walsheim', sans-serif;
+      font-size: 2rem;
+      color: @SeabedBlue;
+      background-color: @BlushOrange;
 
       //clip-path: path("M213.099 12.0229C280.452 39.3178 223.176 69.6906 178.599 78.4429C122.814 89.3976 35.2682 79.6475 11.6292 59.9163C-3.49024 47.2952 -4.74794 25.3665 22.6432 14.7933C65.4754 -2.72262 163.786 -5.94613 213.099 12.0229Z");
       clip-path: url(#mask-05);
