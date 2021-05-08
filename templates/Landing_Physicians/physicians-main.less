@@ -1,3 +1,5 @@
+
+
 & {
   font-family: 'Neue World', sans-serif;
 }
@@ -18,8 +20,8 @@
   flex-direction: column;
 
   &__title {
-    font-size: 4.2rem;
     margin-bottom: 3.3rem;
+    font-size: 4.2rem;
   }
 
   &__description {
@@ -55,6 +57,10 @@
   }
 }
 
+.group-Seafoam--masked {
+  clip-path: url('#physicians-seafoam-path-lg-2-m');
+}
+
 .logo {
   color: @SeabedBlue;
 }
@@ -62,7 +68,7 @@
 .module-content-wrapper {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
 }
 
 .page-title {
@@ -75,6 +81,10 @@
   font-family: 'GT Walsheim', sans-serif;
   font-size: 2.6rem;
   // line-height: 3.2rem;
+}
+
+.module-content--digital-therapeutics {
+  width: 54rem;
 }
 
 .module-header {
@@ -102,6 +112,20 @@
   color: #1d4557;
   letter-spacing: 0.005em;
   text-align: left;
+
+  &__header {
+    font-family: 'Neue World', sans-serif;
+  }
+
+  &__aside {
+  }
+}
+
+.dreamer-video-fake {
+  height: auto;
+  width: 100%;
+  max-width: 50rem;
+  clip-path: url('#physicians-seafoam-video-mask-dreamer');
 }
 
 .module-content--science {
@@ -114,12 +138,14 @@
   }
 
   &__title {
-    margin-top: 42.4rem;
-    margin-bottom: 10rem;
+    margin-top: 62.4rem;
+    margin-bottom: 12.8rem;
   }
 
   &__content {
-    margin-bottom: 26.8rem;
+    margin-bottom: 30.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
   }
 }
 
@@ -132,7 +158,7 @@
 
   &__title {
     // margin: 0 auto;
-    margin-top: 22.4rem;
+    margin-top: 28.4rem;
     margin-bottom: 4.3rem;
     // max-width: 88rem;
   }
@@ -157,13 +183,16 @@
 }
 
 .module-3 {
+  color: #1d4557;
+
   & .module-content-wrapper {
     margin-top: 35rem;
     margin-bottom: 33.2rem;
-    max-width: 88rem;
+    max-width: 156rem;
   }
 
   &__content {
+    max-width: 50rem;
     font-family: 'GT Walsheim', sans-serif;
     font-size: 2.2rem;
     line-height: 2.8rem;
