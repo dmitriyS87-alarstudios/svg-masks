@@ -8,8 +8,8 @@ Landing_FAQs
 
 {% block content %}
   <div class="ensemble-landing-group group-Pebble group-1">
-    <img class="background-image" src="{{ ENV_STATIC_ASSETS_URL }}/lesse-fw19-finals-50_copy_2_900x-2.png" role="decoration">
-    <svg class="background-image" id="Landing_FAQs-1" width="424" height="311" viewBox="0 0 424 311" fill="none" xmlns="http://www.w3.org/2000/svg" role="decoration">
+    <img class="background-image full" src="{{ ENV_STATIC_ASSETS_URL }}/lesse-fw19-finals-50_copy_2_900x-2.png" role="decoration">
+    <svg class="background-image side" id="Landing_FAQs-1" width="424" height="311" viewBox="0 0 424 311" fill="none" xmlns="http://www.w3.org/2000/svg" role="decoration">
       <path d="M-4.31852 287.442C-44.2669 298.646 -44.1135 293.742 -44.1135 293.742C-78.7744 225.558 -195.216 -37.8653 -184.888 -42.9264C-174.56 -47.9876 -158.91 -43.9643 -48.1308 -83.5928C29.0828 -111.214 102.721 -117.395 174.137 -138.007C196.12 -144.352 296.066 -259.402 292 -181C287.934 -102.598 234.981 141.176 193.8 181.984C152.618 222.791 94.2436 259.799 -4.31852 287.442Z" fill="#E8E6DF"/>
     </svg>
     {% include "common/modules/module-header.html" %}
@@ -18,8 +18,10 @@ Landing_FAQs
   <div class="ensemble-landing-group group-Pebble group-2">
     {% include "Landing_FAQs/module-2.html" %}
   </div>
-  {% include "common/modules/module-stay-informed.html" %}
-  <div class="ensemble-landing-group group-SeabedBlue group-3">
+  <div class="ensemble-landing-group group-3">
+    {% include "common/modules/module-stay-informed.html" %}
+  </div>
+  <div class="ensemble-landing-group group-SeabedBlue group-4">
     {% include "common/modules/module-footer.html" %}
   </div>
 {% endblock %}
