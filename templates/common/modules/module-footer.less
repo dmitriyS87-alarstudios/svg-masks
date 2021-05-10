@@ -1,47 +1,62 @@
 .module-footer {
-  text-align: left;
-
-  color: @CloudWhite; 
-  .logo svg {
-    fill: @CloudWhite;
-  }
-
-  font-family: "GT Walsheim";
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 0.02rem;
-
-  .links {
-    font-size: 1.6rem;
-  }  
-}
-
-.module-footer {
   padding: 18.5rem 13rem 8rem 13.5rem;
-  
   display: flex;
+  font-family: "GT Walsheim", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: @CloudWhite;
+  text-align: left;
+  letter-spacing: 0.02rem;
   flex-direction: column;
   align-items: flex-start;
+
   & > * {
-    padding-bottom: 3.5rem;
+    padding-bottom: 2.7rem;
   }
 
   .logo {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    svg {
+      fill: @CloudWhite;
+    }
   }
 
   .links {
-    width: 100%;
     display: flex;
+    width: 100%;
+    font-size: 1.6rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 
+    &__pages,
+    &__stores {
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+    }
+
     &__pages {
       font-weight: bold;
-      & > * { padding-right: 4rem; }
+      align-items: flex-start;
+
+      & > * {
+        padding-right: 5rem;
+      }
+    }
+
+    &__stores {
+      position: relative;
+      align-items: flex-end;
+      top: -0.5rem;
+
+      .badge {
+        padding-left: 1rem;
+        height: 3.7rem;
+      }
     }
   }
 
@@ -50,33 +65,40 @@
   }
 
   .terms {
-    min-height: 11rem;
     display: flex;
+    min-height: 11rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
 
     &__links {
-      min-width: 20rem;
       display: flex;
+      min-width: 20rem;
+      list-style-type: none;
       flex-direction: column;
-      & > * { padding-bottom: 1.5rem; }
+
+      & > * {
+        padding-bottom: 1.5rem;
+      }
+
+      &__stores {
+        text-align: right;
+      }
     }
+
     &__copyright {
       & > * {
         padding-bottom: 0.8rem;
-        vertical-align: top;
         line-height: 1.6rem;
+        vertical-align: top;
       }
     }
+
     &__tools {
       min-width: 30rem;
-      text-align: right;
-
-      font-size: 1.6rem;
       font-weight: bold;
+      font-size: 1.6rem;
+      text-align: right;
     }
   }
-
 }
-
