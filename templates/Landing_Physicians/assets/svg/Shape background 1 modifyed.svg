@@ -23,6 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,41 +38,29 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
+     inkscape:window-width="1920"
      inkscape:window-height="1016"
      id="namedview3786"
      showgrid="false"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="814.38182"
-     inkscape:cy="455.03213"
-     inkscape:window-x="26"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="723.69206"
+     inkscape:cy="135.47311"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg3784"
      inkscape:snap-grids="false"
      inkscape:snap-page="false"
      inkscape:document-rotation="0" />
   <path
-     fill-rule="evenodd"
-     clip-rule="evenodd"
      d="m 0.0147883,2227.2638 c 22.1212697,2.8513 44.5968947,5.4946 67.4234117,7.929 611.50514,65.214 1053.6258,119.5515 1372.5618,164.2969 H 0.02929688 Z"
-     fill="#ABCACF"
-     id="path3782"
-     style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.03415;stroke-opacity:1"
-     sodipodi:nodetypes="ccccc" />
+ />
   <path
      fill-rule="evenodd"
      clip-rule="evenodd"
-     d="m 1440.5174,834.87623 c -67.6913,-13.98531 -136.2398,-35.40486 -209.23,-67.84411 C 899.85244,619.73388 268.60244,516.82026 26.054344,728.92476 17.488544,736.4151 8.9825441,743.88781 0.53614366,751.34285 l -0.019,-143.09711 H 1440.5174 v 226.63049"
+     d="m 1441.0345,285.3933 c -67.6913,-13.98531 -136.2398,-35.40486 -209.23,-67.84411 C 900.36952,70.250955 269.11952,-32.662665 26.571419,179.44183 c -8.5658,7.49034 -17.6079436,14.6202 -26.054344,22.07524 V 0.517075 H 1440.5171 V 285.51707"
      fill="#ABCACF"
      id="path4412"
      style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.03415;stroke-opacity:1"
      sodipodi:nodetypes="ccccccc" />
-  <rect
-     style="fill:none;fill-rule:evenodd;stroke:#000000"
-     id="rect16"
-     width="1440"
-     height="200"
-     x="2.0108349"
-     y="105.17108" />
 </svg>
