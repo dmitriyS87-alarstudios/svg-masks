@@ -17,8 +17,7 @@
 }
 
 .module-footer {
-  padding: 18.5rem 12rem 12rem 13.5rem;
-  min-height: 58rem;
+  padding: 18.5rem 13rem 8rem 13.5rem;
   
   display: flex;
   flex-direction: column;
@@ -39,6 +38,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    &__pages {
+      font-weight: bold;
+      & > * { padding-right: 4rem; }
+    }
   }
 
   .divide-line {
@@ -68,6 +72,9 @@
     &__tools {
       min-width: 30rem;
       text-align: right;
+
+      font-size: 1.6rem;
+      font-weight: bold;
     }
   }
 
