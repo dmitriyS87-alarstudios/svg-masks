@@ -1,4 +1,6 @@
 .module-footer {
+  text-align: left;
+
   color: @CloudWhite; 
   .logo svg {
     fill: @CloudWhite;
@@ -15,11 +17,15 @@
 }
 
 .module-footer {
-  padding: 18rem 12rem 12rem 12rem;
+  padding: 18.5rem 12rem 12rem 13.5rem;
+  min-height: 58rem;
   
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  & > * {
+    padding-bottom: 3.5rem;
+  }
 
   .logo {
     display: flex;
@@ -28,21 +34,41 @@
   }
 
   .links {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
-  .divider {
+  .divide-line {
     width: 100%;
-    height: auto;
   }
 
   .terms {
+    min-height: 11rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
 
+    &__links {
+      min-width: 20rem;
+      display: flex;
+      flex-direction: column;
+      & > * { padding-bottom: 1.5rem; }
+    }
+    &__copyright {
+      & > * {
+        padding-bottom: 0.8rem;
+        vertical-align: top;
+        line-height: 1.6rem;
+      }
+    }
+    &__tools {
+      min-width: 30rem;
+      text-align: right;
+    }
   }
 
 }
