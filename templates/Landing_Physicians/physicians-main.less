@@ -1,5 +1,35 @@
-* {
+& {
   font-family: 'Neue World', sans-serif;
+}
+
+* {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 3.3rem;
+    font-size: 4.2rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  &__icon {
+    width: 100%;
+  }
 }
 
 .button {
@@ -25,6 +55,10 @@
   }
 }
 
+.group-Seafoam--masked {
+  clip-path: url('#physicians-seafoam-path-lg-1');
+}
+
 .logo {
   color: @SeabedBlue;
 }
@@ -33,6 +67,10 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  &--row {
+    flex-direction: row;
+  }
 }
 
 .page-title {
@@ -45,6 +83,21 @@
   font-family: 'GT Walsheim', sans-serif;
   font-size: 2.6rem;
   // line-height: 3.2rem;
+}
+
+.module-content--digital-therapeutics {
+  width: 59rem;
+}
+
+.module-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    font-size: 7.5rem;
+    line-height: 8.7rem;
+  }
 }
 
 .module-title {
@@ -61,27 +114,87 @@
   color: #1d4557;
   letter-spacing: 0.005em;
   text-align: left;
+
+  &__header {
+    font-family: 'Neue World', sans-serif;
+  }
+
+  &__aside {
+  }
+}
+
+.module-content--science {
+  color: #fff;
+}
+
+.movie-wrapper {
+  position: relative;
+  padding-bottom: calc(var(--aspect-ratio, 0.5625) * 100%);
+  height: 0;
+
+  &__video {
+    position: absolute;
+    // height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.module-3-therapeutics {
+  position: absolute;
+  // transform: translateX(-50%);
+  height: 120rem;
+  height: 141.7rem;
+  width: 99.1rem;
+  // width: 100%;
+  background: green;
+  top: -11rem;
+  right: -12rem;
+
+  & .therapeutics-movie {
+    position: relative;
+    // left: -20px;
+    height: auto;
+    width: 99rem;
+  }
+}
+
+.module-3-therapeutics--mask {
+  clip-path: url('#physicians-seafoam-video-mask-dreamer');
 }
 
 .module-1 {
-  &__title {
-    margin-top: 22.4rem;
-    margin-bottom: 10rem;
+  & .module-content-wrapper {
+    max-width: 100rem;
   }
 
-  &__description {
-    margin-bottom: 26.8rem;
+  &__title {
+    margin-top: 62.4rem;
+    margin-bottom: 12.8rem;
+  }
+
+  &__content {
+    margin-bottom: 30.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
   }
 }
 
 .module-2 {
   display: flex;
 
+  & .module-content-wrapper {
+    max-width: 88rem;
+  }
+
   &__title {
     // margin: 0 auto;
-    margin-top: 22.4rem;
+    margin-top: 28.4rem;
     margin-bottom: 4.3rem;
-    max-width: 88rem;
+    // max-width: 88rem;
   }
 
   &__content {
@@ -104,7 +217,20 @@
 }
 
 .module-3 {
+  color: #1d4557;
+
+  & .module-content-wrapper {
+    margin-top: 35rem;
+    margin-bottom: 33.2rem;
+    max-width: 66rem;
+
+    &--with-aside {
+      max-width: 112.5rem;
+    }
+  }
+
   &__content {
+    max-width: 50rem;
     font-family: 'GT Walsheim', sans-serif;
     font-size: 2.2rem;
     line-height: 2.8rem;
@@ -119,14 +245,64 @@
     letter-spacing: 0;
     text-align: left;
   }
+
+  & .button {
+    margin-right: auto;
+  }
 }
 
 .module-4 {
+  & .module-content-wrapper {
+    margin-top: 35rem;
+    margin-bottom: 33.2rem;
+    max-width: 110rem;
+  }
+
   &__title {
+    margin-bottom: 4.5rem;
     font-weight: 400;
     font-size: 4.6rem;
     line-height: 4.8rem;
     letter-spacing: -0.01em;
     text-align: left;
+  }
+
+  & .button {
+    margin-top: 5.5rem;
+    margin-right: auto;
+    margin-bottom: 26.8rem;
+  }
+}
+
+.module-5 {
+  & .module-content-wrapper {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+    max-width: 50rem;
+  }
+}
+
+.module-6 {
+  & .module-content-wrapper {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+    max-width: 117rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1.9rem;
+  }
+
+  &__content {
+    margin-bottom: 8.4rem;
+  }
+}
+
+.module-7 {
+  & .module-content-wrapper {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+    max-width: 108.2rem;
   }
 }
