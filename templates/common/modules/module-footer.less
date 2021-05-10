@@ -1,7 +1,82 @@
 .module-footer {
-  /* defined in groups!
-  background: none;
-  color: @CloudWhite;
-  */
-  min-height: 15rem; /* debug */
+  text-align: left;
+
+  color: @CloudWhite; 
+  .logo svg {
+    fill: @CloudWhite;
+  }
+
+  font-family: "GT Walsheim";
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+
+  .links {
+    font-size: 1.6rem;
+  }  
 }
+
+.module-footer {
+  padding: 18.5rem 13rem 8rem 13.5rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  & > * {
+    padding-bottom: 3.5rem;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__pages {
+      font-weight: bold;
+      & > * { padding-right: 4rem; }
+    }
+  }
+
+  .divide-line {
+    width: 100%;
+  }
+
+  .terms {
+    min-height: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+
+    &__links {
+      min-width: 20rem;
+      display: flex;
+      flex-direction: column;
+      & > * { padding-bottom: 1.5rem; }
+    }
+    &__copyright {
+      & > * {
+        padding-bottom: 0.8rem;
+        vertical-align: top;
+        line-height: 1.6rem;
+      }
+    }
+    &__tools {
+      min-width: 30rem;
+      text-align: right;
+
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+}
+
