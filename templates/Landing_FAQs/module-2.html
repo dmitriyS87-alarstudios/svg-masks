@@ -1,4 +1,37 @@
 <section class="ensemble-landing-module module-2">
-  <!-- <h2>For Patients</h2>
-  <h2>For Physicians</h2> -->
+  <div class="headings-menu">
+    <h2>For Patients</h2>
+    <h2>For Physicians</h2>
+  </div>
+  {% macro list_item(question, id) -%}
+    <li class="faq-module-list-item">
+      <h3 class="faq-module-question item-{{ id }}">{{ question }}</h3>
+      <button class="faq-module-question-button item-{{ id }}">
+        <svg viewBox="0 0 64 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M64 23.8743C64 37.0597 49.2924 51.091 33 51.091C16.7076 51.091 0 37.0597 0 23.8743C0 10.6889 13.2076 0 29.5 0C49.5 3.3424 64 10.6889 64 23.8743Z" fill="#3B9BD8"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M31 27.8291V38.1989H34V27.8291L45 27.8291V24.8291L34 24.8291V13.3696H31V24.8291L19 24.8291V27.8291L31 27.8291Z" fill="white"/>
+        </svg>
+      </button>
+    </li>
+  {%- endmacro %}
+  <ul class="faq-module-list For_Patients ">
+    {{ list_item("What is Ensemble? What is it for?", 1) }}
+    {{ list_item("Who should use Ensemble?", 2) }}
+    {{ list_item("Whom is it NOT for?", 3) }}
+    {{ list_item("How do I get it?", 4) }}
+    {{ list_item("What’s the cost?", 5) }}
+    {{ list_item("Is it supported by science?", 6) }}
+    {{ list_item("What’s the time commitment?", 7) }}
+    {{ list_item("What happens if I miss a few days?", 8) }}
+  </ul>
+  <ul class="faq-module-list For_Patients hidden">
+    {{ list_item("Indications for Use", 1) }}
+    {{ list_item("Can Ensemble be prescribed for all of my patients with Anxiety or Depression?", 2) }}
+    {{ list_item("Does Ensemble replace my patients’ medication or therapy?", 3) }}
+    {{ list_item("What if my patient discusses harming themselves while using Ensemble?", 4) }}
+    {{ list_item("How can I check in on my patients’ progress while they’re using Ensemble?", 5) }}
+    {{ list_item("How are improvements measured?", 6) }}
+    {{ list_item("How long does treatment with Ensemble last?", 7) }}
+  </ul>
+
 </section>
