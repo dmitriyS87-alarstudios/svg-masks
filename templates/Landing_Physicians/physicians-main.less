@@ -8,8 +8,14 @@
 }
 
 .advantages {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 8rem 4rem;
+  grid: auto-flow dense / 33rem 1fr 37rem;
+
+  &--how-it-works {
+    grid-gap: 8rem 4rem;
+    grid: auto-flow dense / 1fr 1fr 1fr;
+  }
 }
 
 .advantage {
@@ -17,13 +23,21 @@
   display: flex;
   flex-direction: column;
 
+  &__header {
+    display: flex;
+    height: 19rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__title {
-    margin-bottom: 3.3rem;
+    margin-bottom: 1.8rem;
     font-size: 4.2rem;
     line-height: 4.6rem;
   }
 
   &__description {
+    padding-right: 4rem;
     font-size: 1.8rem;
     line-height: 2.4rem;
     text-align: left;
@@ -35,13 +49,12 @@
   }
 
   &__icon {
-    padding: 7rem;
-    width: 100%;
+    width: 15rem;
   }
 }
 
 .button {
-  padding: 2rem 5rem;
+  padding: 2rem 6rem;
   font-family: 'GT Walsheim', sans-serif;
   font-size: 2rem;
   line-height: 2.3rem;
@@ -91,7 +104,7 @@
   text-align: left;
 
   &__item {
-    margin-bottom: 2rem;
+    margin-bottom: 3.3rem;
   }
 
   &__item:last-child {
@@ -136,7 +149,7 @@
 }
 
 .page-title {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 8.6rem;
 }
 
@@ -162,16 +175,17 @@
   align-items: center;
 
   &__title {
+    margin-bottom: 2.8rem;
     font-size: 7.5rem;
     line-height: 8.7rem;
   }
 
   &__description {
     font-family: 'GT Walsheim', sans-serif;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
 
     &--new-way-forward {
-      max-width: 60rem;
+      max-width: 50rem;
     }
   }
 }
@@ -193,12 +207,16 @@
 
   &__header {
     // TODO move out font just margins and sizes
-    margin-bottom: 3.6rem;
+    margin-bottom: 2rem;
     font-family: 'Neue World', sans-serif;
+
+    &--new-way-forward {
+      margin-bottom: 4rem;
+    }
   }
 
   &__body {
-    margin-bottom: 6rem;
+    margin-bottom: 6rem; //3.6rem
   }
 
   // &__aside {
@@ -235,8 +253,8 @@
   height: 141.7rem;
   width: 99.1rem;
   background: green;
-  top: -11rem;
-  right: -12rem;
+  top: -7rem;
+  right: -14rem;
 
   &--mask {
     clip-path: url('#physicians-seafoam-video-mask-dreamer');
@@ -251,11 +269,11 @@
 
 .module-5-photo-aside {
   position: absolute;
-  height: 111rem;
-  width: 89.1rem;
+  // height: 111rem;
+  // width: 89.1rem;
   background: green;
-  top: -33rem;
-  right: 0;
+  top: -31rem;
+  right: -62px;
 
   &--mask {
     clip-path: url('#physicians-seafoam-photo-mask-girl');
@@ -280,8 +298,9 @@
   }
 
   &__title {
-    margin-top: 62.4rem;
+    margin-top: 29.3rem;
     margin-bottom: 12.8rem;
+    line-height: 8.8rem;
   }
 
   &__content {
@@ -295,18 +314,17 @@
   display: flex;
 
   & .module-content-wrapper {
-    max-width: 88rem;
+    padding-left: 10.3rem;
+    max-width: 97rem;
   }
 
   &__title {
-    // margin: 0 auto;
-    margin-top: 28.4rem;
+    margin-top: 2.1rem;
     margin-bottom: 4.3rem;
-    // max-width: 88rem;
   }
 
   &__content {
-    margin-bottom: 2.4rem;
+    margin-bottom: 5.4rem;
     width: 77rem;
   }
 
@@ -328,12 +346,14 @@
   color: #1d4557;
 
   & .module-content-wrapper {
-    margin-top: 35rem;
+    margin-top: 34rem;
     margin-bottom: 33.2rem;
-    max-width: 66rem;
+    padding-right: 3rem;
+    padding-left: 4rem;
+    max-width: 85rem;
 
     &--with-aside {
-      max-width: 112.5rem;
+      max-width: 125rem;
     }
   }
 
@@ -371,7 +391,7 @@
     font-weight: 400;
     font-size: 4.6rem;
     line-height: 4.8rem;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.03em;
     text-align: left;
   }
 
@@ -384,22 +404,26 @@
 
 .module-5 {
   & .module-content-wrapper {
-    margin-top: 25rem;
+    margin-top: 16.2rem;
     margin-bottom: 25rem;
     max-width: 117rem;
+  }
+
+  &__content {
+    padding-right: 8rem;
   }
 }
 
 .module-6 {
   & .module-content-wrapper {
-    margin-top: 25rem;
+    margin-top: 23.6rem;
     margin-bottom: 25rem;
     max-width: 117rem;
   }
 
   &__title {
     text-align: center;
-    margin-bottom: 1.9rem;
+    margin-bottom: 9rem;
   }
 
   &__content {
@@ -409,7 +433,7 @@
 
 .module-7 {
   & .module-content-wrapper {
-    margin-top: 25rem;
+    margin-top: 22.6rem;
     margin-bottom: 25rem;
     max-width: 108.2rem;
   }
@@ -417,9 +441,9 @@
 
 .module-8 {
   & .module-content-wrapper {
-    margin-top: 25rem;
+    margin-top: 14rem;
     margin-bottom: 25rem;
-    max-width: 124rem;
+    max-width: 117rem;
   }
 
   & .module-content {
@@ -429,7 +453,7 @@
 
 .module-9 {
   & .module-content-wrapper {
-    margin-top: 25rem;
+    margin-top: 15rem;
     margin-bottom: 25rem;
     max-width: 80rem;
   }
@@ -445,7 +469,7 @@
 
 .module-11 {
   & .module-content-wrapper {
-    margin-top: 11rem;
+    margin-top: 4rem;
     margin-bottom: 30rem;
     max-width: 116rem;
   }
